@@ -1,0 +1,114 @@
+@font-face {
+  font-family: 'rust';
+  src: url(font/Rust.ttf)
+}
+
+@keyframes degrade {
+    0%   {opacity: 1;}
+    50%  {opacity: 0.90;}
+    100% {opacity: 1;}
+}
+
+@keyframes spin {
+  from {transform: rotate(0)}
+  to {transform: rotate(360deg)}
+}
+
+* {
+  margin: 0;
+}
+
+.one, .two, .footer, .server {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  width: 100%;
+}
+
+.one {
+  height: 100vh;
+
+  font-family: rust;
+  font-size: 10vmin;
+
+  background-image: url(media/thumb-1920-819163.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  filter: opacity(0.85);
+}
+
+.two, .server {
+  font-family: 'Alegreya', serif;
+  padding: 4vmin 0;
+  background-color: #292929;
+  color: white;
+}
+
+.server:hover {
+  animation-name: degrade;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+.server {
+  background-color: #738D45;
+  color: #292929;
+}
+
+.footer {
+  min-height: 20vh;
+  flex-direction: row;
+  justify-content: space-around;
+
+  background: url(media/wallhaven-371242.jpg) center fixed no-repeat;
+  background-size: cover;
+}
+
+.front {
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  font-size: 5.5vmin;
+}
+
+p {
+  font-size: 4vmin;
+  padding: 0 12vmin;
+}
+
+small {
+  position: relative;
+  top: -4vmin;
+
+  font-size: 7vmin;
+  font-family: 'Arial', sans-serif;
+}
+
+#portugues {
+  font-family: 'Lobster', cursive;
+}
+
+#semanal {
+  font-family: 'Permanent Marker', cursive;
+}
+
+.fa {
+  color: white;
+}
+
+.icon {
+  height: 56px;
+}
+
+i:hover {
+  animation-name: spin;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+}
