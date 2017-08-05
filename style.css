@@ -18,7 +18,7 @@
   margin: 0;
 }
 
-.one, .two, .footer, .server {
+.one, .two, .footer, .server, .one2 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -40,6 +40,20 @@
   background-size: cover;
 
   filter: opacity(0.85);
+}
+
+.one2 {
+  height: 100vh;
+
+  font-family: rust;
+  font-size: 10vmin;
+
+  background-image: url(media/airdrop.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
 
 .two, .server {
