@@ -131,26 +131,14 @@ i:hover {
 #link {
 	color: #fff;
 	text-decoration:none;
-	-webkit-transition: all 0.2s linear;
-	-moz-transition: all 0.2s linear;
 	transition: all 0.2s linear;
 }
 
 #link:hover {
 	color: #ccc;
-	-webkit-transition: all 0.2s linear;
-	-moz-transition: all 0.2s linear;
 	transition: all 0.2s linear;
 }
 
 #link:active{
-  outline: none;
-}
-
-#link:focus {
-  -moz-outline-style: none;
-}
-
-:-moz-any-link:focus{
   outline: none;
 }
